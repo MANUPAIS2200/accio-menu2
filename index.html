@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accio Café - Mapa del Merodeador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Satisfy&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-content">
+    <h1 class="page-title">Accio Café • Inspirado en el Mapa del Merodeador</h1>
+
+    <div class="map-wrapper">
+      <div class="map-base" id="marauders-map">
+        <!-- Huellas y scroll de nombres (puedes personalizar los textos si querés) -->
+        <div class="footsteps footsteps-1">
+          <div class="footstep left"></div>
+          <div class="footstep right"></div>
+          <div class="scroll-name">
+            <p>Accio Café</p>
+          </div>
+        </div>
+
+        <div class="footsteps footsteps-2">
+          <div class="footstep left"></div>
+          <div class="footstep right"></div>
+          <div class="scroll-name">
+            <p>Merodeadores</p>
+          </div>
+        </div>
+
+        <!-- Flaps -->
+        <div class="map-flap flap--1">
+          <div class="map-flap__front"></div>
+          <div class="map-flap__back"></div>
+        </div>
+        <div class="map-flap flap--2">
+          <div class="map-flap__front"></div>
+          <div class="map-flap__back"></div>
+        </div>
+
+        <!-- Lados del mapa -->
+        <div class="map-side side-1">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/8.png')"></div>
+          <div class="back"></div>
+        </div>
+        <div class="map-side side-2">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/18.png')"></div>
+          <div class="back"></div>
+        </div>
+        <div class="map-side side-3">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/7.png')"></div>
+          <div class="back"></div>
+        </div>
+        <div class="map-side side-4">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/10.png')"></div>
+          <div class="back"></div>
+        </div>
+        <div class="map-side side-5">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/6.png')"></div>
+          <div class="back"></div>
+        </div>
+        <div class="map-side side-6">
+          <div class="front" style="--image: url('https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/11.png')"></div>
+          <div class="back"></div>
+        </div>
+
+        <!-- PANEL DEL MENÚ -->
+        <div class="menu-panel">
+          <div class="menu-panel-inner">
+            <!-- COLUMNA 1: CAFÉS & BREBAJES + ADICIONALES -->
+            <section class="menu-column">
+              <h2>Cafés & brebajes mágicos</h2>
+              <ul class="menu-list">
+                <li><span class="item-name">Harry Potter (Café con leche)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+                <li><span class="item-name">Hagrid Café (Tazón de campo)</span><span class="dots"></span><span class="price">$ 4.300</span></li>
+                <li><span class="item-name">Espresso Patronus (Espresso)</span><span class="dots"></span><span class="price">$ 2.100</span></li>
+                <li><span class="item-name">La Ron Weslatte (Latte)</span><span class="dots"></span><span class="price">$ 3.700</span></li>
+                <li><span class="item-name">Dracochino (Capuchino)</span><span class="dots"></span><span class="price">$ 3.800</span></li>
+                <li><span class="item-name">Macchiato Snape (Macchiato)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+                <li><span class="item-name">Caramel Riddikulus (Caramel macchiato)</span><span class="dots"></span><span class="price">$ 3.800</span></li>
+                <li><span class="item-name">Sirius Black (Americano)</span><span class="dots"></span><span class="price">$ 3.100</span></li>
+                <li><span class="item-name">Albus Marino (Submarino)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+                <li><span class="item-name">Dobby (Chocolatada fría)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+                <li><span class="item-name">Frapugritos (Frappuccino – varios sabores)</span><span class="dots"></span><span class="price">$ 5.200</span></li>
+                <li><span class="item-name">Café Dementor (Café con leche frío)</span><span class="dots"></span><span class="price">$ 3.400</span></li>
+                <li><span class="item-name">Cerveza de mantequilla</span><span class="dots"></span><span class="price">$ 12.000</span></li>
+                <li><span class="item-name">Banana Snich (Licuado de banana)</span><span class="dots"></span><span class="price">$ 3.600</span></li>
+                <li><span class="item-name">Copa de la casa (Yogur, granola y fruta)</span><span class="dots"></span><span class="price">$ 4.800</span></li>
+              </ul>
+
+              <h3 class="menu-subtitle">Adicionales</h3>
+              <ul class="menu-list small">
+                <li><span class="item-name">Jarrita de leche</span><span class="dots"></span><span class="price">$ 1.100</span></li>
+                <li><span class="item-name">Crema</span><span class="dots"></span><span class="price">$ 800</span></li>
+                <li><span class="item-name">Canela o chocolate</span><span class="dots"></span><span class="price">$ 600</span></li>
+              </ul>
+            </section>
+
+            <!-- COLUMNA 2: BLENDS & TÉS + COMBOS -->
+            <section class="menu-column">
+              <h2>Blends & tés</h2>
+              <ul class="menu-list">
+                <li><span class="item-name">Blend Dolores Umbridge (Tetera 500 ml)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Minerva McGonagall (Té verde & hierbas)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Hermione Granger (Té negro con frutos rojos)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Molly Weasley (Té rojo con chocolate y especias)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Bellatrix Lestrange (Té negro Earl Grey)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Luna Lovegood (Té Pu Erh & especias)</span><span class="dots"></span><span class="price">$ 5.700</span></li>
+                <li><span class="item-name">Té para muggles (saquitos varios)</span><span class="dots"></span><span class="price">$ 5.200</span></li>
+              </ul>
+
+              <h2>Combos Fred & George</h2>
+              <ul class="menu-list">
+                <li><span class="item-name">Café con leche + 2 medialunas</span><span class="dots"></span><span class="price">$ 5.800</span></li>
+                <li><span class="item-name">Té negro + porción de budín</span><span class="dots"></span><span class="price">$ 4.300</span></li>
+                <li><span class="item-name">Café con leche + tostado JyQ</span><span class="dots"></span><span class="price">$ 8.000</span></li>
+              </ul>
+            </section>
+
+            <!-- COLUMNA 3: PUDINERÍA, SALADOS, BRUNCH, POCIONES -->
+            <section class="menu-column">
+              <h2>Pudinería mágica</h2>
+              <ul class="menu-list">
+                <li><span class="item-name">Caldero golosinero</span><span class="dots"></span><span class="price">$ 7.000</span></li>
+                <li><span class="item-name">Cajita mágica feliz</span><span class="dots"></span><span class="price">$ 13.000</span></li>
+                <li><span class="item-name">Huevo de Occamy</span><span class="dots"></span><span class="price">$ 8.000</span></li>
+                <li><span class="item-name">Mini torta Happee Birthdae Harry</span><span class="dots"></span><span class="price">$ 8.500</span></li>
+                <li><span class="item-name">Mini torta Tom Riedlee</span><span class="dots"></span><span class="price">$ 8.500</span></li>
+                <li><span class="item-name">Porción torta Voldemort</span><span class="dots"></span><span class="price">$ 8.500</span></li>
+                <li><span class="item-name">Torta tía Petunia (porción)</span><span class="dots"></span><span class="price">$ 12.000</span></li>
+                <li><span class="item-name">Bloque de chocotorta</span><span class="dots"></span><span class="price">$ 8.500</span></li>
+                <li><span class="item-name">Bloque torta Red Velvet</span><span class="dots"></span><span class="price">$ 8.500</span></li>
+                <li><span class="item-name">Cupcakes de las casas</span><span class="dots"></span><span class="price">$ 4.200</span></li>
+                <li><span class="item-name">Porción de cheesecake</span><span class="dots"></span><span class="price">$ 5.400</span></li>
+                <li><span class="item-name">Brownie con nuez y rana</span><span class="dots"></span><span class="price">$ 5.800</span></li>
+                <li><span class="item-name">Cuadrado de coco y dulce de leche</span><span class="dots"></span><span class="price">$ 5.600</span></li>
+                <li><span class="item-name">Cuadrado de pastafrola</span><span class="dots"></span><span class="price">$ 3.200</span></li>
+                <li><span class="item-name">Budín de limón glaseado (porción)</span><span class="dots"></span><span class="price">$ 3.900</span></li>
+                <li><span class="item-name">Medialunas de manteca (x2)</span><span class="dots"></span><span class="price">$ 1.500</span></li>
+                <li><span class="item-name">Alfajores varios</span><span class="dots"></span><span class="price">desde $ 2.900</span></li>
+                <li><span class="item-name">Roll de canela (x2)</span><span class="dots"></span><span class="price">$ 5.000</span></li>
+                <li><span class="item-name">Pan de chocolate</span><span class="dots"></span><span class="price">$ 3.900</span></li>
+                <li><span class="item-name">Cookies de las casas / personajes</span><span class="dots"></span><span class="price">$ 2.500–3.500</span></li>
+              </ul>
+
+              <h3 class="menu-subtitle">Sin TACC</h3>
+              <ul class="menu-list small">
+                <li><span class="item-name">Lemon pie</span><span class="dots"></span><span class="price">$ 7.500</span></li>
+                <li><span class="item-name">Havannet (Tofi)</span><span class="dots"></span><span class="price">$ 7.500</span></li>
+                <li><span class="item-name">Rogel</span><span class="dots"></span><span class="price">$ 7.500</span></li>
+              </ul>
+
+              <h2>Salados de menesteres</h2>
+              <ul class="menu-list small">
+                <li><span class="item-name">Tostado pan árabe JyQ</span><span class="dots"></span><span class="price">$ 4.800</span></li>
+                <li><span class="item-name">Tostadas x3 con dips</span><span class="dots"></span><span class="price">$ 5.100</span></li>
+                <li><span class="item-name">Tostón de palta + huevo revuelto</span><span class="dots"></span><span class="price">$ 7.100</span></li>
+                <li><span class="item-name">Medialuna JyQ</span><span class="dots"></span><span class="price">$ 2.200</span></li>
+                <li><span class="item-name">Huevos revueltos + tostadas</span><span class="dots"></span><span class="price">$ 5.100</span></li>
+                <li><span class="item-name">Croissant XL simple</span><span class="dots"></span><span class="price">$ 3.200</span></li>
+                <li><span class="item-name">Croissant XL JyQ</span><span class="dots"></span><span class="price">$ 4.600</span></li>
+                <li><span class="item-name">Empanadas x3</span><span class="dots"></span><span class="price">$ 5.000</span></li>
+              </ul>
+
+              <h3 class="menu-subtitle">Brunch</h3>
+              <ul class="menu-list small">
+                <li><span class="item-name">Brunch Hogwarts (2/3 personas)</span><span class="dots"></span><span class="price">$ 36.000</span></li>
+                <li><span class="item-name">Brunch Mágico (4 personas)</span><span class="dots"></span><span class="price">$ 51.000</span></li>
+              </ul>
+
+              <h2>Pociones multijugos</h2>
+              <ul class="menu-list small">
+                <li><span class="item-name">Botellita jugo de naranja</span><span class="dots"></span><span class="price">$ 2.100</span></li>
+                <li><span class="item-name">Limonada 1 lt. (menta & jengibre)</span><span class="dots"></span><span class="price">$ 5.200</span></li>
+                <li><span class="item-name">Amortentia 1 lt. (limonada frambuesa)</span><span class="dots"></span><span class="price">$ 5.800</span></li>
+                <li><span class="item-name">Gaseosa 500 cc</span><span class="dots"></span><span class="price">$ 2.400</span></li>
+                <li><span class="item-name">Agua saborizada 500 cc</span><span class="dots"></span><span class="price">$ 2.400</span></li>
+              </ul>
+
+              <p class="menu-note">
+                Aceptamos todos los medios de pago.<br />
+                Alias transferencias: <strong>LASRELIQUIASDELTE</strong>.
+              </p>
+            </section>
+          </div>
+        </div>
+        <!-- FIN PANEL DEL MENÚ -->
+
+      </div>
+    </div>
+
+    <p class="hint">Tocá el mapa para desplegar el menú mágico ✨</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var map = document.getElementById("marauders-map");
+      if (!map) return;
+
+      // cualquier toque dentro del mapa abre/cierra
+      map.addEventListener("click", function () {
+        map.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
