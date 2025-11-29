@@ -37,7 +37,7 @@ body {
 /* ===== MAPA base (desktop/tablet) ===== */
 .map-base {
   width: 306px;
-  height: 600px;
+  height: 800px;
 
   /* Mapa CERRADO: usamos las mismas imágenes que side-5 y side-6 */
   background-image:
