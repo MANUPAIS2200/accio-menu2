@@ -511,6 +511,7 @@ body {
      lo corremos un poco hacia la derecha para que
      las hojas que se abren a la izquierda entren en pantalla */
   .map-base.active {
-    transform: translateX(40px);  /* probá 30 / 50 si querés más o menos movimiento */
+    transform: translateX(80px);  /* probá 30 / 50 si querés más o menos movimiento */
   }
 }
+
