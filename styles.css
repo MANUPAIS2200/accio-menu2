@@ -520,14 +520,5 @@ body {
     max-width: none;
   }
 
-  .map-wrapper {
-    justify-content: center;
-  }
-
-  /* 👇 Esto es la clave:
-     escalamos TODO el mapa (cerrado y abierto) */
-  .map-base {
-    transform: scale(1);          /* probá 0.7–0.8 según te guste */
-    transform-origin: top center;
-  }
+  
 }
