@@ -11,10 +11,10 @@ body {
 
 .main-content {
   text-align: center;
-  margin: 2.5em auto;
-  max-width: 1000px;
-  padding: 0 1rem 3rem;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
 }
 
 .main-content h1 {
@@ -24,10 +24,12 @@ body {
 }
 
 .map-wrapper {
-  position: relative;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center; /* centra vertical */
+  overflow: hidden;   /* oculta cualquier exceso */
 }
 
 /* ===== MAPA base (desktop/tablet) ===== */
