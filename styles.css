@@ -34,17 +34,26 @@ body {
 .map-base {
   width: 306px;
   height: 600px;
-  /* Mapa CERRADO por defecto (cambiar ruta por tu imagen) */
-  background: url("img/mapa-cerrado.jpg") center center / cover;
+
+  /* Mapa CERRADO: usamos las mismas imágenes que side-5 y side-6 */
+  background-image:
+    url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/6.png"),
+    url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/11.png");
+  background-position: left center, right center;
+  background-size: 50% 100%, 50% 100%;
+  background-repeat: no-repeat;
+
   position: relative;
   display: inline-block;
   transform-origin: top center;
   cursor: pointer;
 }
 
-/* Cuando el mapa está ABIERTO, se ve el interior */
+/* Cuando el mapa está ABIERTO, mostramos el interior */
 .map-base.active {
   background-image: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/9.png");
+  background-position: center center;
+  background-size: cover;
 }
 
 /* Escala desktop/tablet */
@@ -502,6 +511,7 @@ body {
   80% { transform: translate(-170px, -25px); }
   100% { transform: translate(-180px, -25px); }
 }
+
 /* ===================================================== */
 /*                MODO MOBILE (max-width 600px)          */
 /* ===================================================== */
@@ -532,21 +542,21 @@ body {
     justify-content: center;
   }
 
-  /* El mapa ocupa toda la pantalla
-     👉 forzamos la imagen del mapa CERRADO acá también */
+  /* El mapa ocupa toda la pantalla en mobile
+     mantenemos los dos fondos de las tapas */
   .map-base {
     width: 100vw;
     height: 100vh;
-    background-image: url("img/mapa-cerrado.jpg");  /* <-- CAMBIÁ si tu ruta es otra */
-    background-size: cover;
-    background-position: center;
+    background-position: left center, right center;
+    background-size: 50% 100%, 50% 100%;
     transform: none;
   }
 
-  /* Cuando el mapa está ABIERTO en mobile:
-     👉 usamos el mismo interior que en desktop */
+  /* Cuando se abre en mobile, interior a pantalla completa */
   .map-base.active {
     background-image: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/9.png");
+    background-position: center center;
+    background-size: cover;
   }
 
   /* En mobile NO usamos alas, solapas ni huellas */
@@ -558,7 +568,7 @@ body {
     display: none !important;
   }
 
-  /* Menú centrado, ocupando casi todo el ancho del mapa */
+  /* Menú centrado, ocupando casi todo el mapa */
   .menu-panel {
     top: 8%;
     bottom: 8%;
@@ -570,7 +580,7 @@ body {
     overflow-y: auto;
   }
 
-  /* Columnas apiladas (scroll vertical normal) */
+  /* Columnas apiladas (scroll vertical) */
   .menu-panel-inner {
     display: block;
   }
