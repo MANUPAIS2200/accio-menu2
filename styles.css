@@ -37,7 +37,7 @@ body {
 /* ===== MAPA base (desktop/tablet) ===== */
 .map-base {
   width: 306px;
-  height: 700px;
+  height: 600px;
 
   /* Mapa CERRADO: usamos las mismas imágenes que side-5 y side-6 */
   background-image:
@@ -233,7 +233,7 @@ body {
 }
 
 .map-side {
-  height: 700px;
+  height: 600px;
   width: 152px;
   position: absolute;
   transform-style: preserve-3d;
@@ -502,7 +502,7 @@ body {
 }
 
 /* ===== AJUSTE SOLO PARA MOBILE ===== */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 
   /* liberamos el body por si necesita un poquito de scroll */
   html, body {
@@ -531,6 +531,6 @@ body {
 
   /* mapa ABIERTO: desplazamos + agrandado */
   .map-base.active {
-    transform: translateX(400px) scale(1.1);
+    transform: translateX(400px) scale(1.5);
   }
 }
