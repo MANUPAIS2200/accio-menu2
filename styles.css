@@ -56,18 +56,6 @@ body {
   background-size: cover;
 }
 
-/* Escala desktop/tablet */
-@media (max-width: 900px) {
-  /*.map-base {
-    transform: scale(0.9);
-  }*/
-}
-
-@media (max-width: 700px) {
-/*  .map-base {
-    transform: scale(0.8);
-  }*/
-}
 
 .hint {
   margin-top: 1.5rem;
@@ -510,4 +498,31 @@ body {
   0% {}
   80% { transform: translate(-170px, -25px); }
   100% { transform: translate(-180px, -25px); }
+}
+
+/* ===== Ajuste para pantallas chicas (mobile) ===== */
+@media (max-width: 600px) {
+
+  /* Que la página pueda scrollear si hace falta */
+  html, body {
+    overflow-x: auto;
+  }
+
+  /* Sacamos márgenes grandes del contenedor */
+  .main-content {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .map-wrapper {
+    justify-content: center;
+  }
+
+  /* 👇 Esto es la clave:
+     escalamos TODO el mapa (cerrado y abierto) */
+  .map-base {
+    transform: scale(0.75);          /* probá 0.7–0.8 según te guste */
+    transform-origin: top center;
+  }
 }
