@@ -1,3 +1,4 @@
+
 /* ===== Base general ===== */
 html, body {
   margin: 0;
@@ -71,7 +72,7 @@ body {
   position: absolute;
   top: 6%;
   bottom: 6%;
-  left: -20%;
+  left: 0%;
   width: 220%;
 
   background: rgba(248, 233, 200, 0.68);
