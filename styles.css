@@ -502,7 +502,6 @@ body {
   80% { transform: translate(-170px, -25px); }
   100% { transform: translate(-180px, -25px); }
 }
-
 /* ===================================================== */
 /*                MODO MOBILE (max-width 600px)          */
 /* ===================================================== */
@@ -533,13 +532,21 @@ body {
     justify-content: center;
   }
 
-  /* El mapa ocupa toda la pantalla */
+  /* El mapa ocupa toda la pantalla
+     👉 forzamos la imagen del mapa CERRADO acá también */
   .map-base {
     width: 100vw;
     height: 100vh;
+    background-image: url("img/mapa-cerrado.jpg");  /* <-- CAMBIÁ si tu ruta es otra */
     background-size: cover;
     background-position: center;
     transform: none;
+  }
+
+  /* Cuando el mapa está ABIERTO en mobile:
+     👉 usamos el mismo interior que en desktop */
+  .map-base.active {
+    background-image: url("https://meowlivia.s3.us-east-2.amazonaws.com/codepen/map/9.png");
   }
 
   /* En mobile NO usamos alas, solapas ni huellas */
