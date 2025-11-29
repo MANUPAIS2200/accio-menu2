@@ -502,35 +502,36 @@ body {
 }
 
 /* ===== AJUSTE SOLO PARA MOBILE ===== */
+/* ===== AJUSTE SOLO PARA MOBILE ===== */
 @media (max-width: 600px) {
 
-  /* liberamos el body por si necesita un poquito de scroll */
+  /* permitimos scroll si hiciera falta y evitamos corte raro */
   html, body {
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow-x: hidden;
+    overflow-y: auto;
   }
 
-  /* que el wrapper empiece un poco corrido a la izquierda */
+  /* que el wrapper arranque a la izquierda y no meta márgenes extra */
   .map-wrapper {
     justify-content: flex-start;
     padding-left: 0;
-    height: auto;           /* ya no fuerza toda la pantalla */
+    height: auto;        /* no fuerza 100vh fijo */
     align-items: flex-start;
     padding-top: 8px;
     padding-bottom: 8px;
-    overflow-y: visible;    /* <-- clave para que no lo corte */
+    overflow-y: visible;
   }
 
-  /* mapa cerrado: lo movemos un poco a la derecha
-     y lo agrandamos un toque */
+  /* mapa cerrado: centrado visual con un pequeño margen */
   .map-base {
-    margin-left: 24px;
-    transform: scale(1.5);
+    margin-left: 24px;   /* ajustá 16 / 24 / 32 al gusto */
+    transform: none;     /* SIN scale para que no se corte */
   }
 
-  /* mapa ABIERTO: desplazamos + agrandado */
+  /* mapa abierto: solo corrimiento horizontal para ver las hojas izquierdas */
   .map-base.active {
-    transform: translateX(400px) scale(1.5);
+    transform: translateX(400px);  /* valor que ya te venía funcionando */
   }
 }
