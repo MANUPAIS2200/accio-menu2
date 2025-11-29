@@ -505,20 +505,3 @@ body {
   100% { transform: translate(-180px, -25px); }
 }
 
-/* ===== Ajuste para pantallas chicas (mobile) ===== */
-@media (max-width: 600px) {
-
-  /* Que la página pueda scrollear si hace falta */
-  html, body {
-    overflow-x: auto;
-  }
-
-  /* Sacamos márgenes grandes del contenedor */
-  .main-content {
-    margin: 0;
-    padding: 0;
-    max-width: none;
-  }
-
-  
-}
