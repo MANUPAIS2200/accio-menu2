@@ -528,6 +528,7 @@ body {
   /* mapa ABIERTO: lo desplazamos más a la derecha para que
      entren las hojas de la izquierda (side-3 / side-5) */
   .map-base.active {
-    transform: translateX(80px);  /* probá 60 / 80 / 100 px según tu celu */
+    transform: translateX(200px);  /* probá 60 / 80 / 100 px según tu celu */
   }
 }
+
