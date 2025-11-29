@@ -24,13 +24,16 @@ body {
 }
 
 .map-wrapper {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* centra vertical */
-  overflow: hidden;   /* oculta cualquier exceso */
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
+
 
 /* ===== MAPA base (desktop/tablet) ===== */
 .map-base {
