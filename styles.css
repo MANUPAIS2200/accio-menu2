@@ -505,14 +505,15 @@ body {
   100% { transform: translate(-180px, -25px); }
 }
 
-
 /* ===== Ajuste para pantallas chicas (mobile) ===== */
 @media (max-width: 600px) {
 
+  /* Que la página pueda scrollear si hace falta */
   html, body {
     overflow-x: auto;
   }
 
+  /* Sacamos márgenes grandes del contenedor */
   .main-content {
     margin: 0;
     padding: 0;
@@ -520,26 +521,13 @@ body {
   }
 
   .map-wrapper {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
     justify-content: center;
-    align-items: flex-start;   /* 👈 que el mapa arranque arriba */
-    overflow-x: auto;
-    overflow-y: hidden;
   }
 
-  /* AGRANDAMOS el mapa en vez de achicarlo */
+  /* 👇 Esto es la clave:
+     escalamos TODO el mapa (cerrado y abierto) */
   .map-base {
-    height: 100vh;            /* 👈 usa casi todo el alto de pantalla */
-    width: auto;
-    transform: scale(1);      /* sin escala o podés probar 1.1 si querés aún más grande */
+    transform: scale(1.5);          /* probá 0.7–0.8 según te guste */
     transform-origin: top center;
   }
-
-  /* Que los lados acompañen la nueva altura */
-  .map-side {
-    height: 100vh;
-  }
 }
-
