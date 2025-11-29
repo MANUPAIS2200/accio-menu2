@@ -34,7 +34,6 @@ body {
   overflow-y: hidden;
 }
 
-
 /* ===== MAPA base (desktop/tablet) ===== */
 .map-base {
   width: 306px;
@@ -61,7 +60,6 @@ body {
   background-size: cover;
 }
 
-
 .hint {
   margin-top: 1.5rem;
   font-size: 0.9rem;
@@ -87,7 +85,7 @@ body {
 
   opacity: 0;
   pointer-events: none;
-  /*  transform: scale(0.97);*/
+  /* transform: scale(0.97); */
   transition: opacity 0.45s ease 0.3s, transform 0.45s ease 0.3s;
   z-index: 20;
 }
@@ -505,13 +503,31 @@ body {
   100% { transform: translate(-180px, -25px); }
 }
 
-/* ===== Ajuste solo para mobile ===== */
+/* ===== AJUSTE SOLO PARA MOBILE ===== */
 @media (max-width: 600px) {
-  /* Cuando el mapa está abierto en el celu,
-     lo corremos un poco hacia la derecha para que
-     las hojas que se abren a la izquierda entren en pantalla */
+
+  /* liberamos el body por si necesita un poquito de scroll */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  /* que el wrapper empiece un poco corrido a la izquierda */
+  .map-wrapper {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  /* mapa cerrado: lo movemos un poco a la derecha para que
+     visualmente quede centrado en la pantalla chica */
+  .map-base {
+    margin-left: 24px; /* podés ajustar 16 / 24 / 32 px a gusto */
+  }
+
+  /* mapa ABIERTO: lo desplazamos más a la derecha para que
+     entren las hojas de la izquierda (side-3 / side-5) */
   .map-base.active {
-    transform: translateX(80px);  /* probá 30 / 50 si querés más o menos movimiento */
+    transform: translateX(80px);  /* probá 60 / 80 / 100 px según tu celu */
   }
 }
-
